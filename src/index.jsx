@@ -1,3 +1,3 @@
-import Stickyfooter from './sui-stickyfooter';
+import Feedback from './sui-feedback';
 
-export default Stickyfooter;
+export default Feedback;

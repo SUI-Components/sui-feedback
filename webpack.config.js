@@ -3,7 +3,6 @@ var webpack = require('webpack');
 var ExtractTextPlugin = require('extract-text-webpack-plugin');
 var merge = require('webpack-merge');
 
-var APP_PATH = path.join(__dirname, '/src');
 var TARGET = process.env.npm_lifecycle_event;
 
 var base = {
@@ -27,7 +26,7 @@ var base = {
        }
     })
   ]
-}
+};
 
 if(TARGET === 'start:server' || !TARGET) {
   module.exports = merge(base, {

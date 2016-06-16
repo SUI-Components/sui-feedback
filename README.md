@@ -1,9 +1,27 @@
-# sui-stickyfooter
+# sui-feedback
 
 ## Description
-Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam commodi esse quis ipsam a iusto aut ratione ex optio ut! Illum alias voluptatibus dolores, perferendis deserunt totam illo reiciendis voluptatem.
+A feedback gathering component by displaying a message at the bottom of the page that launch a fully customizable modal window.
 
-## Instalation
+## Usage
+Render the component passing as props the following object literal:
+
+```javascript
+const literals = {
+    footerTitle: 'This is an important notice',
+    footerParagraf: 'This is more info about the notice',
+    modalTitle: 'Feedback modal Title',
+    modalContent: 'Insert here your important extended content inside your modal',
+    buttonOk: 'OK'
+};
+
+ReactDom.render(
+    <Feedback literals={literals} />,
+    document.getElementById('main')
+);
+```
+
+## Installation
 Clone this repository and run:
 ```
 $ npm install
@@ -13,8 +31,7 @@ $ npm install
 
 To run the lint tasks we have dependencies of:
 
-* [Ruby](https://www.ruby-lang.org/en/downloads/)
-* [scss-lint](https://github.com/brigade/scss-lint)
+* [sass-lint](https://github.com/sasstools/sass-lint)
 
 If that tools are not installed you cant commit. Because the lint pass never will be ok.
 
@@ -22,7 +39,7 @@ If that tools are not installed you cant commit. Because the lint pass never wil
 ```
 $ npm run dev
 ```
-This command will build your `.sass`, `.jsx` and `.js` files and open a local development environment, with hot reloading. A browser window will be opened as well, showing the entry point of your documents folder for development purposes.
+This command will build your `.scss`, `.jsx` and `.js` files and open a local development environment, with hot reloading. A browser window will be opened as well, showing the entry point of your documents folder for development purposes.
 
 ## To work in TDD mode:
 ```
@@ -39,6 +56,3 @@ $ npm run doc
 
 That will publish in a gh-page for `docs` folder.
 What is a component without a public demo, isn´t ?!
-
-## Usage
-Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non perspiciatis, quod eum perferendis, facere enim hic. Quibusdam deleniti, distinctio. Molestias error quibusdam quo similique, laborum iste libero dolorum saepe et.

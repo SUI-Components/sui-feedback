@@ -1,5 +1,5 @@
 {
-  "name": "@schibstedspain/sui-stickyfooter",
+  "name": "@schibstedspain/sui-feedback",
   "version": "0.0.0",
   "main": "lib/",
   "scripts": {
@@ -29,7 +29,7 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git@github.com:SUI-Components/sui-stickyfooter.git"
+    "url": "git@github.com:SUI-Components/sui-feedback.git"
   },
   "pre-commit": [
     "lint",
